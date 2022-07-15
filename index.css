@@ -22,7 +22,7 @@ body {
   padding-right: 100px;
 }
 
-.md:ml-auto flex flex-wrap items-center text-base justify-center mr-5 hover:text-white{
+.navbar_container ul li {
   margin-right: 50px;
   list-style: none;
   color: white;
@@ -434,17 +434,18 @@ button {
 }
 
 .events {
-  height: 90vh;
+  height: max-content;
   /* background: yellow; */
   align-items: center;
   justify-content: center;
   display: flex;
+  flex-direction: column;
 }
 
 .events_card {
   width: 72vw;
   /* background: yellowgreen; */
-  height: 70vh;
+  
   border-radius: 20px;
   background: #501150;
   background: #2374bf;
@@ -452,11 +453,12 @@ button {
 
 .events_card_container2 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .events_card_container1 {
   display: flex;
+  
   justify-content: space-between;
   /* background: chartreuse; */
   align-items: center;
@@ -464,6 +466,7 @@ button {
 
 .events_card_container1 h1 {
   margin-left: 55px;
+
   color: white;
   font-weight: 500;
   font-size: 30px;
@@ -483,9 +486,10 @@ button {
 
 .events_card_container2 {
   /* background: yellowgreen; */
+  margin-top: 100px;
   height: 400px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 
